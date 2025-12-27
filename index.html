@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odion Monopoly Health Care | Los Angeles Sickle Cell Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #002c5f;
+            --secondary-blue: #00a8e8;
+            --medical-green: #27ae60;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--light-bg); color: var(--text-dark); line-height: 1.6; }
+
+        /* NAVIGATION */
+        nav { background: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.6rem; color: var(--primary-blue); letter-spacing: -1px; }
+        .logo span { color: var(--secondary-blue); }
+        .nav-links a { text-decoration: none; color: var(--text-dark); margin-left: 25px; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--secondary-blue); }
+
+        /* HERO SECTION */
+        .hero { 
+            background: linear-gradient(rgba(0, 44, 95, 0.85), rgba(0, 44, 95, 0.85)), url('https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1600'); 
+            background-size: cover; background-position: center; 
+            height: 550px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 15px; font-family: 'Montserrat'; font-weight: 800; }
+        .hero p { font-size: 1.25rem; max-width: 850px; margin-bottom: 35px; opacity: 0.9; }
+        .cta-btn { background: var(--medical-green); color: white; padding: 18px 40px; border-radius: 5px; text-decoration: none; font-weight: 700; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3); }
+
+        /* CORE SERVICES */
+        .section-padding { padding: 80px 8%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-family: 'Montserrat'; font-size: 2.2rem; color: var(--primary-blue); }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-bottom: 4px solid var(--secondary-blue); }
+        .card h3 { margin-bottom: 15px; color: var(--primary-blue); }
+
+        /* TESTIMONIALS WITH PICTURES */
+        .testimonials-section { background: #edf2f7; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .testimony-card { background: white; padding: 30px; border-radius: 15px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .patient-img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--medical-green); }
+        .quote { font-style: italic; color: #4a5568; margin-bottom: 15px; font-size: 1.1rem; }
+        .patient-name { font-weight: 700; color: var(--primary-blue); }
+        .patient-year { font-size: 0.85rem; font-weight: 600; color: var(--medical-green); text-transform: uppercase; }
+
+        /* FOOTER */
+        footer { background: var(--primary-blue); color: white; padding: 60px 8%; text-align: center; }
+        .footer-logo { font-size: 1.5rem; margin-bottom: 20px; font-weight: 800; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ODION <span>MONOPOLY</span></div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#services">Treatments</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Advanced Sickle Cell Care</h1>
+        <p>Los Angeles' leading facility for Sickle Cell Cures and AA Blood Genotype Transitioning. We bring hope to families through revolutionary genetic health protocols.</p>
+        <a href="#" class="cta-btn">Book Your Consultation</a>
+    </section>
+
+    <section id="services" class="section-padding">
+        <div class="section-title">
+            <h2>Our Specialized Treatments</h2>
+        </div>
+        <div class="services-grid">
+            <div class="card">
+                <h3>Sickle Cell Cure</h3>
+                <p>Advanced cellular therapy designed to eradicate the root causes of sickle cell anemia, allowing patients to live life without the burden of pain crises.</p>
+            </div>
+            <div class="card">
+                <h3>AA Genotype Transition</h3>
+                <p>State-of-the-art medical procedures focused on stabilizing blood health and transitioning patients toward optimal AA blood profiles.</p>
+            </div>
+            <div class="card">
+                <h3>L.A. Research Center</h3>
+                <p>Our Los Angeles facility serves as a global hub for hematological breakthroughs and personalized patient care.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section-padding testimonials-section">
+        <div class="section-title">
+            <h2>Voices of Victory: 2007 - 2012</h2>
+            <p>Real people who reclaimed their health at Odion Monopoly Health Care.</p>
+        </div>
+        
+        <div class="testimonial-grid">
+            <div class="testimony-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop" alt="Patient 2007" class="patient-img">
+                <p class="quote">"In 2007, I was one of the first to undergo the cure protocol. Before Odion, my life was defined by hospitals. Today, I am an athlete and completely pain-free."</p>
+                <div class="patient-name">Marcus Thompson</div>
+                <div class="patient-year">Class of 2007</div>
+            </div>
+
+            <div class="testimony-card">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&fit=crop" alt="Patient 2012" class="patient-img">
+                <p class="quote">"My daughter transitioned to AA blood under their care in 2012. It was a miracle for our family. She is now 12 years without a single crisis."</p>
+                <div class="patient-name">The Rodriguez Family</div>
+                <div class="patient-year">Class of 2012</div>
+            </div>
+
+            <div class="testimony-card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&fit=crop" alt="Recent Patient" class="patient-img">
+                <p class="quote">"The expertise in Los Angeles is unmatched. They don't just treat symptoms; they transform your genetic future."</p>
+                <div class="patient-name">David L.</div>
+                <div class="patient-year">Recent Success</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">ODION MONOPOLY HEALTH CARE</div>
+        <p>1200 Wilshire Blvd, Los Angeles, CA 90017</p>
+        <p>Email: contact@odionmonopoly.com | Phone: +1 (213) 555-0842</p>
+        <div style="margin-top: 30px; opacity: 0.6; font-size: 0.8rem;">
+            &copy; 2025 Odion Monopoly Health Care. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
